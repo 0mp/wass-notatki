@@ -1,6 +1,6 @@
-all: cheat-sheet.pdf
+all: build/cheat-sheet.pdf
 
-cheat-sheet.pdf: cheat-sheet.tex
+build/cheat-sheet.pdf: cheat-sheet.tex
 	mkdir -p build
 	pdflatex -file-line-error -halt-on-error -output-directory ./build cheat-sheet.tex
 
