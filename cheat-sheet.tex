@@ -3,6 +3,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
 
 \newcommand\wassterm[1]{{\color{blue}{#1}}}
 
@@ -235,6 +237,15 @@
  \item Equilibrium z aktywnymi agentami A (i pozostali agenci są silnie nieaktywni\footnote{cokolwiek to znaczy - chyba ich effort musi być $< 0$}) jest \wassterm{stabilne} wtw, gdy  $|\lambda_{min}(\textbf{G}_{A})| < 1/\delta$.
  \item Jeżeli $|\lambda_{min}(\textbf{G})| > 1/\delta$, to może istnieć wiele equilibira i w skład wszystkich equilibria wchodzą agenci nieaktywni.
  \item We say a \wassterm{Nash equilibrium} \textbf{x} is \wassterm{asymptotically stable} when this system converges back to \textbf{x} following any small enough perturbation.
+\end{enumerate}
+
+\subsection{Gry komplementarne i substytutywne}
+\begin{enumerate}
+ \item 
+ 	\wassterm{Komplementarność}: Dla każdego $i$, $a_i \geq a'_i$, $a_{-i} \geq a'_{-i} $:
+ 	$$u_i(a_i, a_{-i}) - u_i(a'_i, a_{-i}) \geq  u_i(a_i, a'_{-i}) - u_i(a'_i, a'_{-i}).$$
+ 	\wassterm{Substytutywność}: Dla każdego $i$, $a_i \geq a'_i$, $a_{-i} \geq a'_{-i} $:
+ 	$$u_i(a_i, a_{-i}) - u_i(a'_i, a_{-i}) \leq  u_i(a_i, a'_{-i}) - u_i(a'_i, a'_{-i}).$$
 \end{enumerate}
 
 \end{document}
