@@ -200,6 +200,12 @@
   \item
     jeżeli $\alpha_{min}(G)$ jest większe niż $-1/\delta$, to jest dokładnie jedno
     \wassterm{Nash equilibrium}
+  %TODO: \item Wzór na liczenie \wassterm{eigenvalue(G)}: $ $
+  \item Strategia \textbf{e} jest \wassterm{Nash equilibrium} wtw, gdy 
+  	\begin{itemize}
+	  \item $ (\textbf{I} + \delta \textbf{G}_{A})\textbf{x}_{A} = 1$
+  	  \item $ \delta\textbf{G}_{N-A,A}\textbf{x}_A \geq 1.$
+  	\end{itemize}
 \end{enumerate}
 
 \subsection{Bonacich}
@@ -222,6 +228,14 @@
 
 \end{enumerate}
 
+\subsection{Stable Equilibria}
+
+\begin{enumerate}
+ \item Jeżeli $|\lambda_{min}(\textbf{G})| < 1/\delta$, istnieje \wassterm{unikalne Nash equilibrium} i jest ono \wassterm{stabilne}.
+ \item Equilibrium z aktywnymi agentami A (i pozostali agenci są silnie nieaktywni\footnote{cokolwiek to znaczy - chyba ich effort musi być $< 0$}) jest \wassterm{stabilne} wtw, gdy  $|\lambda_{min}(\textbf{G}_{A})| < 1/\delta$.
+ \item Jeżeli $|\lambda_{min}(\textbf{G})| > 1/\delta$, to może istnieć wiele equilibira i w skład wszystkich equilibria wchodzą agenci nieaktywni.
+ \item We say a \wassterm{Nash equilibrium} \textbf{x} is \wassterm{asymptotically stable} when this system converges back to \textbf{x} following any small enough perturbation.
+\end{enumerate}
 
 \end{document}
 /* vim: set ts=2 sw=2 tw=2 et : */
