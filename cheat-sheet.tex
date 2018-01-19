@@ -1,0 +1,227 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+\newcommand\wassterm[1]{{\color{blue}{#1}}}
+
+\begin{document}
+
+\title{Notatki ze wstępu do analizy sieci społecznych}
+\author{BTW, check out \href{https://freebsd.org}{FreeBSD} and \href{https://joinmastodon.org}{Mastodon}}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{Apt}
+
+\subsection{Równowagi Nasha i optima społeczne}
+
+\begin{enumerate}
+
+  \item a 
+    \wassterm{strictly dominant strategy}
+    is a unique 
+    \wassterm{Nash equilibrium}
+
+  \item
+    a 
+    \wassterm{dominant strategy}
+    is a 
+    \wassterm{Nash equilibrium}
+
+  \item
+    $s$ is 
+    \wassterm{Pareto efficient} 
+    if for no $s'$: 
+    $
+    \forall_i p_i(s') \geq p_i(s) 
+    \wedge
+    \exists_i p_i(s') > p_i(s) 
+    $
+
+  \item
+    \wassterm{social welfare} 
+    of $s$: $\sum^n_{j=1}p_j(s)$
+
+  \item
+    \wassterm{social optimum} 
+    is a maximal
+    \wassterm{social welfare} 
+
+    \begin{enumerate}
+      \item
+        each 
+        \wassterm{social optimum} 
+        is 
+        \wassterm{Pareto efficient}
+    \end{enumerate}
+
+  \item
+    \wassterm{public goods game}
+
+  \item
+    \wassterm{tragedy of the commons}
+
+\end{enumerate}
+
+\subsection{Gry z potencjałem i gry zagęszczeniowe}
+
+\begin{enumerate}
+
+  \item
+    \wassterm{best response dynamics}
+    is an algorithm to find
+    \wassterm{Nash equilibrium}
+
+    \begin{enumerate}
+      \item
+        if every player has a 
+        \wassterm{strictly dominant strategy}
+        then all
+        \wassterm{best response dynamics}
+        terminate after at most $n$ steps and their outcomes are unique
+      \item
+        \wassterm{best response dynamics}
+        may miss a
+        \wassterm{Nash equilibrium}
+    \end{enumerate}
+  \item
+    $P: S_1\times \cdot \times S_n \rightarrow \mathbb{R}$ is an
+    \wassterm{exact potential function}
+    for $G$ if
+    $$
+    \forall_i \forall_{s_{-i} \in S_{-i}} \forall_{s_i, s_i' \in S_i}
+    p_i(s_i, s_{-i}) -
+    p_i(s_i', s_{-i}) = 
+    P(s_i, s_{-i}) -
+    P(s_i', s_{-i})
+    $$
+    \begin{enumerate}
+      \item
+        \wassterm{potential game}
+        has an
+        \wassterm{exact potential function}
+      \item
+        \wassterm{exact potential function}
+        count the number of defecting players
+
+      \item
+        all
+        \wassterm{best response dynamics}
+        terminate for a finite
+        \wassterm{potential game}
+
+      \item
+        every
+        \wassterm{congestion game}
+        is a
+        \wassterm{potential game}
+        so it has a
+        \wassterm{Nash equilibrium}
+
+        \begin{enumerate}
+          \item
+            \wassterm{price of stability}
+            $$
+            \frac{\text{
+              \wassterm{social cost}
+            of the best
+            \wassterm{Nash equilibrium}
+            }}{{\text{
+              \wassterm{social cost}
+            of the
+            \wassterm{social optimum} 
+            }}}
+            $$
+        \end{enumerate}
+    \end{enumerate}
+
+\end{enumerate}
+
+\subsubsection{weakly acyclic games}
+
+\begin{enumerate}
+  \item
+    \wassterm{improvement path}
+    is a maximal sequence of 
+    \wassterm{profitable deviation}s
+  \item
+    $G$ has the
+    \wassterm{finite improvement property}
+    (FIP) if for any
+    \wassterm{joint strategy}
+    every 
+    \wassterm{improvement path}
+    that starts at it is finite
+
+  \item
+    a game is
+    \wassterm{weakly acyclic}
+    if for any 
+    \wassterm{joint strategy}
+    there exists a finite
+    \wassterm{improvement path}
+    that starts at it
+
+  \item
+    every game on a simple cycle is
+    \wassterm{weakly acyclic}
+
+    % TODO: Dokończ czytać "notatki z wykładu".
+
+
+\end{enumerate}
+
+\subsection{Diffusion in Social Networks with Competing Products}
+
+\subsection{Social Networks Games}
+
+\begin{enumerate}
+  \item
+    \wassterm{Nash equilibrium}
+    exists and can be computed in polynomial time if there are at most two products
+  \item
+    in a DAG, a non-trivial 
+    \wassterm{Nash equilibrium}
+    always exists
+\end{enumerate}
+
+
+
+% End of Apt
+
+\section{Dziubiński}
+
+\begin{enumerate}
+  \item
+    jeżeli $\alpha_{min}(G)$ jest większe niż $-1/\delta$, to jest dokładnie jedno
+    \wassterm{Nash equilibrium}
+\end{enumerate}
+
+\subsection{Bonacich}
+
+
+\begin{enumerate}
+  \item
+    \wassterm{benefit function}
+    $
+    b(0) = 0, 
+    b' > 0,
+    b'' < 0
+    $
+
+  \item
+    intuition for 
+    \wassterm{positive externalities}
+    and
+    \wassterm{negative eternalities}:
+
+\end{enumerate}
+
+
+\end{document}
+/* vim: set ts=2 sw=2 tw=2 et : */
