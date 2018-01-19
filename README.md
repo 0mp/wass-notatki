@@ -1,1 +1,1 @@
-# wass-notatki
+# Notatki ze wstępu do analizy sieci społecznych
