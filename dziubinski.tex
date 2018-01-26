@@ -1,0 +1,101 @@
+\section{Dziubiński}
+
+\begin{enumerate}
+  \item
+    jeżeli $\alpha_{min}(G)$ jest większe niż $-1/\delta$, to jest dokładnie jedno
+    \wassterm{Nash equilibrium}
+  %TODO: \item Wzór na liczenie \wassterm{eigenvalue(G)}: $ $
+  \item Strategia \textbf{e} jest \wassterm{Nash equilibrium} wtw, gdy
+  	\begin{itemize}
+	  \item $ (\textbf{I} + \delta \textbf{G}_{A})\textbf{x}_{A} = 1$
+  	  \item $ \delta\textbf{G}_{N-A,A}\textbf{x}_A \geq 1.$
+  	\end{itemize}
+\end{enumerate}
+
+\subsection{Bonacich}
+
+
+\begin{enumerate}
+  \item
+    \wassterm{benefit function}
+    $
+    b(0) = 0,
+    b' > 0,
+    b'' < 0
+    $
+
+  \item
+    intuition for
+    \wassterm{positive externalities}
+    and
+    \wassterm{negative externalities}:
+
+\end{enumerate}
+
+\subsection{Stable Equilibria}
+
+\begin{enumerate}
+ \item Jeżeli $|\lambda_{min}(\textbf{G})| < 1/\delta$, istnieje \wassterm{unikalne Nash equilibrium} i jest ono \wassterm{stabilne}.
+ \item Equilibrium z aktywnymi agentami A (i pozostali agenci są silnie nieaktywni\footnote{cokolwiek to znaczy - chyba ich effort musi być $< 0$}) jest \wassterm{stabilne} wtw, gdy  $|\lambda_{min}(\textbf{G}_{A})| < 1/\delta$.
+ \item Jeżeli $|\lambda_{min}(\textbf{G})| > 1/\delta$, to może istnieć wiele equilibria i w skład wszystkich equilibria wchodzą agenci nieaktywni.
+ \item We say a \wassterm{Nash equilibrium} \textbf{x} is \wassterm{asymptotically stable} when this system converges back to \textbf{x} following any small enough perturbation.
+\end{enumerate}
+
+\subsection{Gry komplementarne i substytutywne}
+\begin{enumerate}
+ \item
+ 	\wassterm{Komplementarność}: Dla każdego $i$, $a_i \geq a'_i$, $a_{-i} \geq a'_{-i} $:
+ 	$$u_i(a_i, a_{-i}) - u_i(a'_i, a_{-i}) \geq  u_i(a_i, a'_{-i}) - u_i(a'_i, a'_{-i}).$$
+ 	\wassterm{Substytutywność}: Dla każdego $i$, $a_i \geq a'_i$, $a_{-i} \geq a'_{-i} $:
+ 	$$u_i(a_i, a_{-i}) - u_i(a'_i, a_{-i}) \leq  u_i(a_i, a'_{-i}) - u_i(a'_i, a'_{-i}).$$
+ \item Consider a game of strategic complements such that:
+  \begin{itemize}
+   \item for every player i, and specification of strategies of the other players, $a_{-i} \in A_{-i}$, player $i$ has a
+nonempty set of best responses $BR_i(a_{-i})$ that is a closed sublattice of the complete lattice $A_i$, and
+   \item for every player $i$, if $a'_{-i} \geq a_{-i}$, then $sup_{i} BR_{i}(a'_{-i}) \geq sup_{i} BR_{i}(a-{-i})$ and $inf_i BR_i(a'_{-i}) \geq inf_i BR_i(a_{-i})$.
+  \end{itemize}
+  An equilibrium exists and the set of equilibria form a (nonempty) complete lattice.
+\end{enumerate}
+
+\subsection{Inne}
+\begin{enumerate}
+ \item  A differentiable function $f$ is (strictly) concave on an interval if and only if its derivative function $f'$ is (strictly) monotonically decreasing on that interval, that is, a concave function has a non-increasing (decreasing) slope.
+ \item If $f$ is twice-differentiable, then $f$ is concave if and only if $f''$ is non-positive (or, if the acceleration is non-positive). If its second derivative is negative then it is strictly concave, but the opposite is not true.
+\end{enumerate}
+
+\subsection{Zadanie 2}
+\begin{enumerate}
+    \item
+        \wassterm{pozytywne efekty zewnętrzne}
+    \item
+        $e_i \geq e'_i, e_{-i} \geq e'_i$,
+        $$
+        u(e_i, e_{-i})
+        u(e'_i, e_{-i})
+        ?
+        u(e_i, e'_{-i})
+        u(e'_i, e'_{-i})
+        $$
+        $$
+        f(A) - f(B)
+        ?
+        f(A - \varepsilon_C) - f(B - \varepsilon_D)
+        $$
+        \begin{enumerate}
+            \item
+                \wassterm{strategiczna substytutywność}---\wassterm{concave} function
+            \item
+                \wassterm{strategiczna komplementarność}---\wassterm{convex} function
+        \end{enumerate}
+\end{enumerate}
+
+\subsection{Zadanie 3}
+\begin{enumerate}
+ \item
+     \wassterm{pairwise stable}: usunięcie lub dodanie krawędzi nie pogorszy
+        sytuacji jednemu, ale drugiemu polepszy.
+ \item
+     \wassterm{strongly stable}: dla wszystkich podzbiorów wierzchołków w
+        grafie, dodawanie krawędzi wewnątrz grupy i usuwanie krawędzi
+        wychodących z grupy nie polepsza sytuacji.
+\end{enumerate}
