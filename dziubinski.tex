@@ -72,6 +72,24 @@ nonempty set of best responses $BR_i(a_{-i})$ that is a closed sublattice of the
             \item
                 \wassterm{strategiczna komplementarność}---\wassterm{convex} function
         \end{enumerate}
+      \item
+        Wybranie $1$-ki jest zawsze bez sensu, bo gdy suma sąsiadów minus koszt
+        $>= 0$, to się opłaca $2$ niemniej niż jeden, a gdy mniejsza, to się
+        opłaca bardziej $0$, niż jeden.
+
+        Najlepszą, w sensie wysiłków, \wassterm{równowagę Nasha} liczymy
+        algorytmem \wassterm{best response dynamics} startując od stanu, gdzie
+        wszyscy wybrali $2$.
+
+        Gdybyśmy chcieli najgorszą \wassterm{równowagę Nasha}, to startujemy od
+        stanu gdzie są same zera. Użycie algorytmu z samymi zerami dla szukania
+        maksymalnej \wassterm{równowagi Nasha} jest błędem, bo znajdzie
+        równowagę z samymi zerami, a w maksymalnej \wassterm{równowadze Nasha}
+        jest zwykle kilka dwójek. Do tej równowagi nie da się dotrzeć ze stanu
+        z samymi zerami, bo dwójki opłacają się, gdy inni już wybrali dwójki.
+
+      \item
+        Czy zawsze istnieje \wassterm{Nash equilibrium}, to TAK na mocy \wassterm{twierdzenia o równowagach w grach supermodularnych}.
 \end{enumerate}
 
 \subsection{Zadanie 2}
