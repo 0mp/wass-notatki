@@ -1,17 +1,5 @@
 \section{Dziubiński}
 
-\begin{enumerate}
-  \item
-    jeżeli $\alpha_{min}(G)$ jest większe niż $-1/\delta$, to jest dokładnie jedno
-    \wassterm{Nash equilibrium}
-  %TODO: \item Wzór na liczenie \wassterm{eigenvalue(G)}: $ $
-  \item Strategia \textbf{e} jest \wassterm{Nash equilibrium} wtw, gdy
-  	\begin{itemize}
-	  \item $ (\textbf{I} + \delta \textbf{G}_{A})\textbf{x}_{A} = 1$
-  	  \item $ \delta\textbf{G}_{N-A,A}\textbf{x}_A \geq 1.$
-  	\end{itemize}
-\end{enumerate}
-
 \subsection{Bonacich}
 
 
@@ -68,25 +56,32 @@ nonempty set of best responses $BR_i(a_{-i})$ that is a closed sublattice of the
     \item
         \wassterm{pozytywne efekty zewnętrzne}
     \item
-        $e_i \geq e'_i, e_{-i} \geq e'_i$,
-        $$
-        u(e_i, e_{-i})
-        u(e'_i, e_{-i})
-        ?
-        u(e_i, e'_{-i})
-        u(e'_i, e'_{-i})
-        $$
-        $$
-        f(A) - f(B)
-        ?
-        f(A - \varepsilon_C) - f(B - \varepsilon_D)
-        $$
+        \wassterm{concave} functions and \wassterm{convex} functions
         \begin{enumerate}
+            \item
+                $e_i \geq e'_i, e_{-i} \geq e'_i$,
+            \item
+                $ u(e_i, e_{-i}) u(e'_i, e_{-i}) ?  u(e_i, e'_{-i}) u(e'_i, e'_{-i}) $
+            \item
+                $ f(A) - f(B) ?  f(A - \varepsilon_C) - f(B - \varepsilon_D) $
             \item
                 \wassterm{strategiczna substytutywność}---\wassterm{concave} function
             \item
                 \wassterm{strategiczna komplementarność}---\wassterm{convex} function
         \end{enumerate}
+\end{enumerate}
+
+\subsection{Zadanie 2}
+\begin{enumerate}
+  \item
+    jeżeli $\alpha_{min}(G)$ jest większe niż $-1/\delta$, to jest dokładnie jedno
+    \wassterm{Nash equilibrium}
+    %TODO: \item Wzór na liczenie \wassterm{eigenvalue(G)}: $ $
+  \item Strategia \textbf{e} jest \wassterm{Nash equilibrium} wtw, gdy
+    \begin{enumerate}
+      \item $ (\textbf{I} + \delta \textbf{G}_{A})\textbf{x}_{A} = 1$
+      \item $ \delta\textbf{G}_{N-A,A}\textbf{x}_A \geq 1.$
+    \end{enumerate}
 \end{enumerate}
 
 \subsection{Zadanie 3}
