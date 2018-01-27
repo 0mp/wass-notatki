@@ -39,6 +39,11 @@
       \item
         $\sum_{c\in 2^{N-\{a_i\}}} \frac{\abs{c}!(\abs{N} - \abs{c} -1)!MC((a,c)}{\abs{N}!}$
         ($\mathcal{O}(2^n)$)
+      \item
+        \wassterm{Shapley value}: a weighted average marginal contribution of
+        an agent to every coalition this agent could possibly belong to:
+        $SV_i(v) = \sum_{S\subset V, v_i \in S} \xi_S (v(S) - v(S - \{v_i\}))$, where
+        $\xi_S = \frac{(\abs{S} - 1)! (\abs{V} - \abs{S})!}{\abs{V}!}$
     \end{enumerate}
 \end{enumerate}
 
